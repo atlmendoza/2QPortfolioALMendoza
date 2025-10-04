@@ -25,12 +25,14 @@ Second Quarter will focus on the development of web sites using HTML, CSS and JS
 * Text Links, Events in CSS, and image sprites
 * CSS Float
 * Box Model
+* Additional CSS Properties
+* Debugging Techniques and Wireframing (reading materials)
 
   ### Grading System:
 | Item | Percentage |
 |------|------------|
 | Formative Assessmen | 30% |
-| * Quizzes / Exercises |      |
+| * Quizzes / Exercises      |
 | Summative Assessment | = 70% |
 | Project Proposal | 10% |
 | Long Test | 20% |
@@ -39,5 +41,4 @@ Second Quarter will focus on the development of web sites using HTML, CSS and JS
 
 
   
-Additional CSS Properties
-Debugging Techniques and Wireframing (reading materials)
+
