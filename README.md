@@ -1,5 +1,5 @@
 # 2QPortfolioALMendoza
-## Aline Mendoza
+## CS3: Web Development
 -------------------------------------------------
 Second Quarter will focus on the development of web sites using HTML, CSS and JS.  JavaScript will be used to insert interactivity into the site.  Second Quarter is also the start of a web site project that will be developed until the end of the fourth quarter.
 
