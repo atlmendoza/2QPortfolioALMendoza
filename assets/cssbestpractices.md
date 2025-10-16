@@ -45,6 +45,7 @@ Here’s what each part means:
 
 🎨 HSL Breakdown
 Hue: The type of color, represented as a degree on the color wheel (0–360°)
+<p><img src="https://www.sensationalcolor.com/wp-content/uploads/Color-Spectrum-Wheel-1-scaled.jpg" width="200px" height="200px"></p>
 
 0° = Red
 
