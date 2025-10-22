@@ -67,7 +67,11 @@
       margin-right: 10px;
       float: left;
     }
-    
+    .container img ~ img { /* targetting the img siblings of img inside .container */
+      float: right;
+      margin-left: 5px;
+    }
+
     /* H. Attribute Selector */
     a[target="_blank"] {
       color: red;
@@ -91,7 +95,7 @@
     /* extra CSS */
     .container ul {
       list-style-type: none; /* removes bullets */
-      clear: left; /* to remove effect of float:left */
+      clear: left; /* to remove effect of float:left or right or both*/
       padding: 0; /* removes the spaces surrounding the lis */
     }
     
@@ -111,7 +115,7 @@
     <p class="intro">This is an introduction paragraph.</p>
   </header>
   <section>
-    <img src="https://wikitechy.com/css/img/css/css-selectors.png" />
+    <img src="https://wikitechy.com/css/img/css/css-selectors.png" />b
     <div class="container">
       <img src="https://pixelmechanics.com.sg/wp-content/uploads/2019/04/css.jpg" />
       <p>
