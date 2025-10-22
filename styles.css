@@ -1,0 +1,22 @@
+* {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+header, footer {
+  background: black;
+  color: white;
+}
+article {
+  width: 80%;
+  margin: 10px auto;
+  border: 1px solid navy;
+  border-radius: 10%;
+  padding: 10px;
+}
+article > img {
+  float: left;
+  margin-right: 10px;
+}
+footer {
+  clear: left;
+}
