@@ -12,7 +12,7 @@ header {
               3px 3px red;
 }
 header img {
-  float:ledt;
+  float:left;
 }
 nav {
   background: navy;
