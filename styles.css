@@ -11,9 +11,13 @@ header {
   text-shadow: 2px 2px grey, 
               3px 3px red;
 }
+header img {
+  float:ledt;
+}
 nav {
   background: navy;
   padding: 10px;
+  clear: left;
 }
 
 a:link, a:visited {
