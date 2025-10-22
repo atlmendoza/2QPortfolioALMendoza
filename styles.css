@@ -5,6 +5,7 @@
 header, footer {
   color: navy;
   padding: 10px;
+  text-align: center;
 }
 header {
   text-shadow: 2px 2px grey, 
@@ -26,7 +27,6 @@ a:hover, a:active {
   font-style: italic;
 }
 
-
 section {
   width: 80%;
   margin: 10px auto;
@@ -35,8 +35,6 @@ section {
   padding: 10px;
 }
 
-
 footer {
-  text-align:center;
   text-decoration:underline;
 }
