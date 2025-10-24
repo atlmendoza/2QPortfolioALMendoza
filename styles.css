@@ -2,16 +2,21 @@
   font-family: Arial, sans-serif;
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 header, footer {
   color: navy;
   padding: 10px;
 }
-header > h1 {
-  text-shadow: 2px 2px grey, 
-              3px 3px red;
+header  h1 {
+  text-shadow: 2px 2px grey;
+  margin-top: 0px;
 }
 header img {
   float:left;
+  margin-right: 5px;
 }
 nav {
   background: navy;
@@ -31,12 +36,14 @@ a:hover, a:active {
 }
 
 section {
-  width: 80%;
+  width: 60%;
   margin: 10px auto;
-  border: 1px solid navy;
+  border: 2px solid navy;
   padding: 10px;
+  background: lightblue;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px grey;
 }
-
 footer {
   text-decoration:underline;
   text-align: center;
