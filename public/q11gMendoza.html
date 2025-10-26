@@ -90,8 +90,8 @@
           height: 315px;
         }
 
-      @media (max-width: 700px) {
-        section {
+      @media (max-width: 700px) { /* checks if width of the viewport has a max-width of 700px then styles will be applied below on selected HTML elements */
+        section { 
           width: 90%;
         }
         section:not(section:nth-of-type(3)) { /* will not be applied on the 3rd section containing the youtube video */
@@ -103,13 +103,13 @@
         nav {
           text-align: center;
         }
-        a:link, a:visited {
+        a:link, a:visited { /*  makes navigation vertical */
           border-right: none;
           border-bottom: 2px solid white;
           display: block;
           padding: 5px 0;
         }
-        iframe {
+        iframe { /* change the size of the youtube video */
           width: 100%;
           height: auto;
         }
