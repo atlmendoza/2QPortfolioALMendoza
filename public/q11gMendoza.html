@@ -7,9 +7,114 @@
     <meta name="keywords" content="HTML basic tags">
     <meta name="author" content="AL Mendoza">
     <title>Our Pets</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css"> <!-- using the stylesheet of index.html -->
     <link rel="icon" href="../assets/pshslogo.png" sizes="32x32" type="image/png">
     <script src="script.js" defer></script>
+    <style>
+        header div {
+        width: 22%;
+        margin: 0 auto;
+          & > h3 {   /* this selector means h3 children uner header div */
+            color: green;
+            text-align:center;
+            margin-top:0;
+          }
+        }
+        section {
+          width: 90%;
+          overflow: auto; /* to contain content within a specified width and height */
+          padding: 20px;
+          margin: 20px auto; 
+        }
+
+        section:not(section:nth-of-type(3)) { /* will not be applied on the 3rd section containing the youtube video */
+          display: flex; /* enables flexbox layout applied on the article elements inside section */
+          gap: 20px; /* space between items */
+          justify-content: center; /* Centers items horizontally */
+          align-items: center; /* Centers items vertically */
+           flex-direction: row;
+        }
+
+        article {
+          width: 30.33%;
+          padding: 10px;
+          background-color: cornsilk;
+          border: 2px solid navy;
+          border-radius: 10px;
+          box-shadow: 3px 3px 5px grey;
+        }
+
+        article h2, table h2{
+          clear: left;
+          color: navy;
+          margin-top:20px;
+          text-align: center
+        }
+
+        article img{
+          float: left;
+          margin-right: 10px;
+        }
+
+        article:hover { /* to slightly increase the size of article when hovered */
+          transform: scale(1.02);
+          transition: transform 0.3s; /* smooth transition when scale is applied */
+        }
+        table {
+          margin: auto;
+          border-collapse: collapse;
+          width: 90%;
+          border:2px solid navy;
+          border-radius: 20px;
+        }
+        tr:nth-child(odd) {
+          background-color: cornsilk;
+        }
+        tr:nth-child(even) {
+          background-color:skyblue;
+        }
+
+        iframe {
+          display: block;
+          margin: auto;
+          margin-top: 10px;
+        }
+
+        section:nth-of-type(3) > *{
+          margin-top: 40px;
+          text-align: center;
+        }
+
+        iframe {
+          width: 560px;
+          height: 315px;
+        }
+
+      @media (max-width: 700px) {
+        section {
+          width: 90%;
+        }
+        section:not(section:nth-of-type(3)) { /* will not be applied on the 3rd section containing the youtube video */
+          flex-direction: column;
+        }
+        article {
+          width: 90%
+        }
+        nav {
+          text-align: center;
+        }
+        a:link, a:visited {
+          border-right: none;
+          border-bottom: 2px solid white;
+          display: block;
+          padding: 5px 0;
+        }
+        iframe {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
 </head>
 <body>
     <header>
@@ -20,7 +125,6 @@
                 Our Pet Cats    
             </h1>
             <h3>by AL Mendoza </h3>
-            <hr>
         </div>
         <nav>
             <a href="../index.html"> Home </a>
@@ -57,7 +161,7 @@
       <table border="1" cellpadding="8" cellspacing="0">
         <thead>
           <tr>
-            <th colspan="4"><h3>Some Interesting Information About Cats</h3></th>
+            <th colspan="4"><h2>Some Interesting Information About Cats</h2></th>
           </tr>
           <tr>
             <th>🐾 Trait</th>
@@ -127,7 +231,7 @@
     </section>
     <section>
         <h2>A 20 minute video of cute cats </h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/y0sF5xhGreA?si=k80-vwi7rP3gnWCx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/y0sF5xhGreA?si=k80-vwi7rP3gnWCx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <br/><cite>Credit: 20 Minutes of Adorable Kittens 😍 | BEST Compilation. url: https://www.youtube.com/watch?v=y0sF5xhGreA</cite>
     </section>
 

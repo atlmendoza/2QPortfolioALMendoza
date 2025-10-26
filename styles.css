@@ -48,3 +48,24 @@ footer {
   text-decoration:underline;
   text-align: center;
 }
+ @media (max-width: 700px) {
+        section {
+          width: 90%;
+        }
+        section:not(section:nth-of-type(3)) { /* will not be applied on the 3rd section containing the youtube video */
+          flex-direction: column;
+        }
+        article {
+          width: 90%
+        }
+        nav {
+          text-align: center;
+        }
+        a:link, a:visited {
+          border-right: none;
+          border-bottom: 2px solid white;
+          display: block;
+          padding: 5px 0;
+        }
+      }
+
