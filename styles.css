@@ -1,13 +1,20 @@
+:root {
+  --bgcolor: #182618; 
+  --fontcolor: #F2F2F2;
+  --headcolor: #57BA98;
+  --bodycolor: #F7EFE5;
+}
 * {
   font-family: Arial, sans-serif;
   box-sizing: border-box;
 }
 body {
+  background-color: var(--bodycolor);
   margin: 0;
   padding: 0;
 }
 header, footer {
-  color: navy;
+  color: var(--headcolor);
   padding: 10px;
 }
 header  h1 {
@@ -19,7 +26,7 @@ header img {
   margin-right: 5px;
 }
 nav {
-  background: navy;
+  background: var(--headcolor);
   padding: 10px;
   clear: left;
 }
@@ -36,13 +43,14 @@ a:hover, a:active {
 }
 
 section {
+  color: var(--fontcolor);
   width: 60%;
   margin: 10px auto;
-  border: 2px solid navy;
+  border: 2px solid grey;
   padding: 10px;
-  background: lightblue;
+  background:var(--bgcolor);
   border-radius: 10px;
-  box-shadow: 5px 5px 5px grey;
+  box-shadow: 5px 5px 5px black
 }
 footer {
   text-decoration:underline;

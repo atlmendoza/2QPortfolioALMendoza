@@ -15,7 +15,7 @@
         width: 22%;
         margin: 0 auto;
           & > h3 {   /* this selector means h3 children under header div */
-            color: green;
+            color:var(--headcolor);
             text-align:center;
             margin-top:0;
           }
@@ -39,16 +39,17 @@
           width: 30.33%;
           padding: 10px;
           background-color: cornsilk;
-          border: 2px solid navy;
-          border-radius: 10px;
-          box-shadow: 3px 3px 5px grey;
+          color: black;
+          border: 2px solid black;
+          border-radius:10px;
+          box-shadow:3px 3px 5px grey;
         }
 
         article h2, table h2{
           clear: left;
-          color: navy;
+          color: var(--headcolor);
           margin-top:20px;
-          text-align: center
+          text-align: center;
         }
 
         article img{
@@ -61,17 +62,22 @@
           transition: transform 0.3s; /* smooth transition when scale is applied */
         }
         table {
+          color: black;
           margin: auto;
           border-collapse: collapse;
           width: 90%;
-          border:2px solid navy;
+          border:2px solid black;
           border-radius: 20px;
+          box-shadow:3px 3px 5px grey;
+        }
+        caption {
+          color: black;
+        }
+        tr:nth-child(even) {
+          background-color:var(--headcolor);
         }
         tr:nth-child(odd) {
           background-color: cornsilk;
-        }
-        tr:nth-child(even) {
-          background-color:skyblue;
         }
 
         iframe {
@@ -98,7 +104,7 @@
           flex-direction: column; /* flex items will flow columnwise (vertical) */
         }
         article {
-          width: 90%
+          width: 90%;
         }
         nav {
           text-align: center;
@@ -129,9 +135,7 @@
         <nav>
             <a href="../index.html"> Home </a>
             <!-- please change the href to contain the link to your groupmate's 1st graded exercise -->
-            <a href="#"> Pets of My Classmate1 </a>
-            <a href="#"> Pets of My Classmates2 </a>
-            <a href="#"> Pets of My Classmates2 </a>
+             <a href="q23gExercise.html"> Third Graded </a> 
         </nav>
     </header>
     <section>
